@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.movie img{
+    width: 400px;
+    height:200px;
+    margin:20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(20, 20, 20, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    width: 120px;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar input {
+    padding: 5px;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar .nav-right a {
+    font-weight: bold;
+}
+
+
+.hero {
+    height: 80vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/5c800ea7-5bff-43ac-97a5-52eb218944a2/d44e028d-5c17-46cb-9137-7b9b99ff2e01/NG-en-20230918-popsignuptwoweeks-perspective_alpha_website_medium.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cta-button.secondary {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.movies-section {
+    padding: 40px 50px;
+}
+
+.movies-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.movies-row {
+    display: flex;
+    gap: 20px;
+}
+
+.movie {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    font-size: 14px;
+    color: #999;
+}
